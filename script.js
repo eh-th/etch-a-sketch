@@ -33,4 +33,4 @@ function click() {
     createGrid(buttonPrompt)
 }
 
-
+button1.onclick = () => click()
