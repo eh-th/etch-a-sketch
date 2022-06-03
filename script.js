@@ -14,5 +14,9 @@ function createGrid(gridSize = 16) {
             flexContainer.appendChild(flexDiv)
             flexDiv.classList.add('flexdiv');  
             flexDiv.setAttribute('id','flexitem')
+            //change background color of a square on hover
+            flexDiv.addEventListener('mouseover', e=>{
+            flexDiv.style.backgroundColor = "blue";
+        })
     }
 }}
