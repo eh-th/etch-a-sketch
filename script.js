@@ -1,13 +1,15 @@
 //define the parent container 
 const container = document.querySelector('#container');
-//create a child div with flexbox and add it to container
 
-
-
-// //use a loop to create 16 flexbox-items in a single line
-for (let item = 1; item < 17; item++) {
-    const flex`${item}` = document.createElement("flex"`${item}`);
-    container.appendChild(flex`${item}`)
+//create 16 flex containers in order to create 16 lines
+for (i=0; i<16; i++) {
+    const flexContainer = document.createElement('flexContainer')
+    container.appendChild(flexContainer)
+    flexContainer.classList.add('flexcontainer');                                      
+    //then a new loop creates 16 flexbox-items in a single line
+    for (j=0; j<16; j++) {
+        const flexDiv = document.createElement('flexDiv')
+        flexContainer.appendChild(flexDiv)
+        flexDiv.classList.add('flexdiv');   
+    }
 }
-
-//use a loop to multiply the above result 16 times

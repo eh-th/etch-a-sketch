@@ -1,7 +1,26 @@
-.flex-container {
+
+
+.flexcontainer {
     display: flex;
+    background-color: #f1f1f1;
+    flex: 50%;
 }
 
-.flex-item {
-    background-color: blue;
+.flexdiv {
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+    flex: 50%;
+
 }
+
+.flexdiv :hover {
+    background-color: red;
+}
+
+/* make the flexcontainer responsive*/
+@media (max-width: 800px) {
+    .flexcontainer {
+      flex-direction: row;
+    }
+  }
