@@ -1,7 +1,7 @@
 //define the parent container 
 const container = document.querySelector('#container');
 const button1 = document.querySelector('#button1');
-let buttonPrompt
+let buttonPrompt = 16
 createGrid(buttonPrompt)
 
 function createGrid(gridSize = 16) {
@@ -25,6 +25,11 @@ function createGrid(gridSize = 16) {
 
 //create a click function that prompts the user for a grid size
 function click() {
+    //clean the page of the previous grid
+    for (i = buttonPrompt; i > 0; i--) {
+        const flexContainer = document.querySelector('flexContainer')
+        container.removeChild(flexContainer)
+    }
     buttonPrompt = prompt("Please enter the desired grid size:",'')
     //check if the provided number is under 100
     while (buttonPrompt > 100) {
