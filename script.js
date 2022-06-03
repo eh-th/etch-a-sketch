@@ -1,6 +1,8 @@
 //define the parent container 
 const container = document.querySelector('#container');
 createGrid()
+const button1 = document.querySelector('#button1');
+
 
 function createGrid(gridSize = 16) {
 //create 16 flex containers in order to create 16 lines
