@@ -1,5 +1,5 @@
 //define the parent container 
-const container = document.querySelector('#container');
+const container = document.querySelector('#grid');
 const button1 = document.querySelector('#button1');
 let buttonPrompt = 16
 createGrid(buttonPrompt)

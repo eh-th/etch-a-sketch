@@ -1,21 +1,25 @@
-#container {
-    width: 1000px;
+#grid {
     display: flex;
     flex-direction: column;
-}
+    width:600px; 
+    max-width:600px; 
+    height: 600px;
+    max-height: 600px;
+    display: inline-block;
+    background-color: #f1f1f1;
+
+    }
 
 .flexcontainer {
     display: flex;
-    background-color: #f1f1f1;
-    flex: 50%;
+    
 }
 
 .flexdiv {
     border-style: dotted;
     border-width: 1px;
-    width: 30px;
-    height: 30px;
-    flex: 50%;
+    width:10px;
+    height: 10px;
 
 }
 
