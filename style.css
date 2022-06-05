@@ -1,26 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    background-color: #27233A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
 #grid {
     display: flex;
-    flex-direction: column;
-    width:600px; 
-    max-width:600px; 
-    height: 600px;
-    max-height: 600px;
     display: inline-block;
+    max-width: 100%;
     background-color: #f1f1f1;
-
+    position: relative;
     }
 
 .flexcontainer {
     display: flex;
-    
 }
 
 .flexdiv {
     border-style: dotted;
     border-width: 1px;
-    width:10px;
-    height: 10px;
-
+    width: 5px;;
+    height: 5px;
+    flex: 1;
 }
 
 .hover {
