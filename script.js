@@ -18,7 +18,11 @@ function createGrid(gridSize = 16) {
             flexDiv.setAttribute('id','flexitem')
             //change background color of a square on hover
             flexDiv.addEventListener('mouseover', e=>{
-            flexDiv.style.backgroundColor = "blue";
+            //set the RGB values with a random function and apply it to the flexDiv to have a random color each time
+            let red = randomColor();
+            let green = randomColor();
+            let blue = randomColor();
+            flexDiv.style.backgroundColor = `rgb(${red},${green},${blue})`;
         })
     }
 }}
@@ -38,4 +42,11 @@ function click() {
     createGrid(buttonPrompt)
 }
 
+//Create a function that returns a random value between 0 and 255 for the rgb color
+function randomColor() {
+    let ranColor = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+    return ranColor
+}
+
 button1.onclick = () => click()
+
